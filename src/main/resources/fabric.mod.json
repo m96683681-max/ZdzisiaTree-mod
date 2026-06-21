@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "zdzisia_tree",
+  "version": "${version}",
+  "name": "Zdzisia Tree",
+  "description": "Rare world structure with a giant tree containing a house on a branch!",
+  "authors": [
+    "Zdzisia Modder"
+  ],
+  "contact": {
+    "homepage": "https://github.com",
+    "sources": "https://github.com"
+  },
+  "license": "MIT",
+  "icon": "assets/zdzisia_tree/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.zdzisia.tree.ZdzisiaTreeMod"
+    ],
+    "client": [
+      "com.zdzisia.tree.client.ZdzisiaTreeClientMod"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.21.1",
+    "java": ">=21"
+  }
+}

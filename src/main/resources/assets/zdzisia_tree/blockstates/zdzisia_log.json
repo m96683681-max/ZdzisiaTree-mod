@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "zdzisia_tree:block/zdzisia_log"
+    },
+    "axis=z": {
+      "model": "zdzisia_tree:block/zdzisia_log",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "zdzisia_tree:block/zdzisia_log",
+      "z": 90
+    }
+  }
+}
