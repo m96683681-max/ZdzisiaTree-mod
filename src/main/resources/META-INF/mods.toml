@@ -1,0 +1,24 @@
+mods = [
+    {
+        modId = "zdzisia_tree"
+        mandatory = true
+        versionRange = "[1.0.0,)"
+        ordering = "NONE"
+        side = "BOTH"
+        displayTest = "MATCH_VERSION"
+    }
+]
+
+[[dependencies.minecraft]]
+    modId = "fabric"
+    mandatory = true
+    versionRange = "*"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.minecraft]]
+    modId = "fabricapi"
+    mandatory = true
+    versionRange = "*"
+    ordering = "NONE"
+    side = "BOTH"

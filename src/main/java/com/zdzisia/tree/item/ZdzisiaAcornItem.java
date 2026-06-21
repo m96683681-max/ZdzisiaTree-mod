@@ -17,15 +17,13 @@ public class ZdzisiaAcornItem extends Item {
 	public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
 		ItemStack itemStack = player.getStackInHand(hand);
 		
-		if (!world.isClient) {
-			// Sneaking converts acorn to sapling
-			if (player.isSneaking()) {
-				itemStack.decrement(1);
-				if (!player.getAbilities().creativeMode) {
-					player.giveItemStack(new ItemStack(ZdzisiaItems.ZDZISIA_SAPLING));
-				}
-				return TypedActionResult.success(itemStack, false);
+		if (!world.isClient && player.isSneaking()) {
+			// Sneak + right-click: convert acorn to sapling
+			itemStack.decrement(1);
+			if (!player.getAbilities().creativeMode) {
+				player.giveItemStack(new ItemStack(ZdzisiaItems.ZDZISIA_SAPLING));
 			}
+			return TypedActionResult.success(itemStack, false);
 		}
 		
 		return TypedActionResult.pass(itemStack);
